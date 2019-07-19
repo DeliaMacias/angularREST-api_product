@@ -1,0 +1,22 @@
+
+<!--
+<h2>{{product.name}}</h2>
+<p>{{product.description}}</p>
+<img [src]='product.image'>
+<h3>
+    <strong>{{product.price | currency}}</strong>
+</h3>
+
+-->
+
+    <p>Si funciona, espera un momento mientras carga el internet.....</p>
+    <div *ngIf="product">
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
+        <img [src]='product.image'>
+        <h3>
+            <strong>{{ product.price| currency }}</strong>
+        </h3>
+
+    </div>
+    
