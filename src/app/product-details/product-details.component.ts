@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProductDetailsComponent implements OnInit {
 
-  product:any[]=[];
+  product:any;
   
 
   constructor(private apiProducts:ProductosService, 
@@ -20,7 +20,7 @@ export class ProductDetailsComponent implements OnInit {
         subscribe((product_result:any) => {
             
             console.log("Esta entrando");
-            this.product = product_result.Object;
+            this.product = product_result.data;
             //console.log(product_result);
 
           },
